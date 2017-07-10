@@ -62,11 +62,11 @@ http://nixos.org/nix/manual/#ch-expression-language
 
   ```
   let g = { x, y }: x + y
-  in f { x = 1; y = 2; }
+  in g { x = 1; y = 2; }
   ```
   > 3
 
-  `let g = { x, y ? 2 }: x + y; in f { x = 1; }`    # 3
+  `let g = { x, y ? 2 }: x + y; in g { x = 1; }`    # 3
 
   'inherit' and 'with'
 
