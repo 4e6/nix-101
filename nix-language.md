@@ -132,8 +132,8 @@ let x = 1; y = 2; in x + y
 
 ## Function
 
-Nix support lambdas of the form `pattern: body`. Lambda can be assigned to a
-variable.
+Nix support lambdas of the form `pattern: body`. Lambda can be named by
+assigning it to a variable.
 
 ``` nix
 let inc = x: x + 1;
